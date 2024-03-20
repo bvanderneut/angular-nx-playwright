@@ -1,0 +1,23 @@
+{
+  "name": "tests-playwright-util-helpers",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "projects/playright-helper/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "projects/playright-helper/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "scope:playwright",
+    "type:util"
+  ]
+}

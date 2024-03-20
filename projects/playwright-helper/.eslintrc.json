@@ -1,0 +1,17 @@
+{
+  "extends": [".eslintrc-main.json"],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": ["projects/playwright-helper/tsconfig.*?.json"]
+      },
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "warn",
+        "@typescript-eslint/no-namespace": "warn",
+        "@typescript-eslint/no-floating-promises": "error"
+      }
+    }
+  ]
+}

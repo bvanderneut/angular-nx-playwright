@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "target": "ES2022",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "alwaysStrict": false,
+    "lib": ["ES2022", "dom"],
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "@indy/tests/playwright/util-helpers": [
+        "./projects/playwright-helper/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["wwwroot"],
+  "compileOnSave": false,
+  "buildOnSave": false
+}
